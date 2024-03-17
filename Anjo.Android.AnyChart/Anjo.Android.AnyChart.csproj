@@ -2,15 +2,15 @@
 	<PropertyGroup>
 		<TargetFrameworks>net8.0-android;net7.0-android;</TargetFrameworks>
 		<SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
-		<Nullable>enable</Nullable>
+		<Nullable>disable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 	</PropertyGroup>
 	<PropertyGroup>
 		<PackageId>Anjo.Android.AnyChart</PackageId>
-		<PackageVersion>1.1.5</PackageVersion>
-		<AssemblyVersion>1.1.5</AssemblyVersion>
-		<FileVersion>1.1.5</FileVersion>
-		<Version>1.1.5</Version>
+		<PackageVersion>1.1.5.1</PackageVersion>
+		<AssemblyVersion>1.1.5.1</AssemblyVersion>
+		<FileVersion>1.1.5.1</FileVersion>
+		<Version>1.1.5.1</Version>
 		<Title>Anjo Android AnyChart SDK</Title>
 		<Authors>Wael Anjo</Authors>
 		<Owners>Wael Anjo</Owners>
@@ -19,7 +19,7 @@
 		<Description>.NET for Android (formerly Xamarin.Android) Binding Library - AnyChart SDK V1.1.5</Description>
 		<PackageReleaseNotes>AnyChart SDK v1.1.5</PackageReleaseNotes>
 		<Copyright>Copyright (c) 2024 Wael Anjo</Copyright>
-		<PackageTags>Xamarin.Android, AnyChart, chart, charts, charting-library, chart-component, gradle, android-library, android-development, data-visualization, android-ui, android-studio, android-widget, chart-library, android-view, charting, android-component, android-chart, android-widgets, android-charting, android-charts</PackageTags>
+		<PackageTags>Xamarin.Android, AnyChart, chart, charts, charting-library, chart-component, gradle, android-library, android-development, data-visualization, android-ui, android-widget, chart-library, android-view, charting, android-component, android-chart, android-widgets, android-charting, android-charts</PackageTags>
 		<Summary>HtmlTextView is an extended TextView component for Android, which can load very simple HTML by converting it into Android Spannables for viewing.</Summary>
 		<!-- Include symbol files (*.pdb) in the built .nupkg -->
 		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
@@ -29,8 +29,8 @@
 		<PackageIcon>icon.png</PackageIcon>
 	</PropertyGroup>
 	<ItemGroup>
-	  <None Remove="Jars\AnyChart-Android-1.1.5.aar" />
-	</ItemGroup> 
+		<None Remove="Jars\AnyChart-Android-1.1.5.aar" />
+	</ItemGroup>
 	<ItemGroup>
 		<None Include="..\icon.png">
 			<Pack>True</Pack>
@@ -44,5 +44,10 @@
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>
-	</ItemGroup>  
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.6.1.7" />
+		<PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.9.22.1" />
+		<PackageReference Include="Xamarin.Kotlin.StdLib.Jdk7" Version="1.9.22.1" />
+	</ItemGroup>
 </Project>
