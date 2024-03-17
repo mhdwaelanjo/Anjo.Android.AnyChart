@@ -1,9 +1,26 @@
 ﻿<metadata>
-  <!--
+	<!--
   This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
   
   This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
+
+	<attr path="/api/package[@name='com.anychart.charts']/class[@name='Resource']" name="name">AcResource</attr>
+	<attr path="/api/package[@name='com.anychart.charts']/class[@name='Stock']" name="name">AcStock</attr>
+	<attr path="/api/package[@name='com.anychart.charts']/class[@name='Sunburst']" name="name">AcSunburst</attr>
+	<attr path="/api/package[@name='com.anychart.core.gantt.rendering']/class[@name='Settings']" name="name">AcSettings</attr>
+	<attr path="/api/package[@name='com.anychart.core.stock']/class[@name='Grouping']" name="name">AcGrouping</attr>
+	<attr path="/api/package[@name='com.anychart.core.ui']/class[@name='Legend']" name="name">AcLegend</attr>
+	<attr path="/api/package[@name='com.anychart.core.ui']/class[@name='Scroller']" name="name">AcScroller</attr>
+	<attr path="/api/package[@name='com.anychart.core.ui']/class[@name='Table']" name="name">AcTable</attr>
+	<attr path="/api/package[@name='com.anychart.graphics.vector']/class[@name='Image']" name="name">AcImage</attr>
+	<attr path="/api/package[@name='com.anychart.graphics.vector']/class[@name='Stage']" name="name">AcStage</attr>
+	<attr path="/api/package[@name='com.anychart.graphics.vector']/class[@name='Text']" name="name">AcText</attr>
+	<attr path="/api/package[@name='com.anychart.data']/class[@name='Tree']" name="name">AcTree</attr>
+	<attr path="/api/package[@name='com.anychart.scales']/class[@name='Calendar']" name="name">AcCalendar</attr>
+
+	<remove-node path="/api/package[@name='com.anychart']/interface[@name='AnyChartView.JsListener']" />
+
 </metadata>
